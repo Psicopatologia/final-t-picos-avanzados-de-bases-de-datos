@@ -6,7 +6,7 @@ module.exports = {
       `SELECT id from Factura;`
     );
     const productos = await queryInterface.sequelize.query(
-      `SELECT id from Producto;`
+      `SELECT id from Productos;`
     );
     return queryInterface.bulkInsert('FacturaProductos', [{
       cantidad:1,

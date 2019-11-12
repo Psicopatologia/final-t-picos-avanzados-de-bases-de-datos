@@ -8,12 +8,12 @@ module.exports = {
     const categorias = await queryInterface.sequelize.query(
       `SELECT id from Categoria;`
     );
-    return queryInterface.bulkInsert('Producto', [{
+    return queryInterface.bulkInsert('Productos', [{
       nombre: 'pantera omg',
       precio: 300000.0,
       stock: 10,
       ProveedorId: proveedores[0][1].id,
-      CategoriaId: categorias[0][0].id,
+      CategoriumId: categorias[0][0].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -21,7 +21,7 @@ module.exports = {
       precio: 3500000.0,
       stock: 20,
       ProveedorId: proveedores[0][1].id,
-      CategoriaId: categorias[0][0].id,
+      CategoriumId: categorias[0][0].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -29,7 +29,7 @@ module.exports = {
       precio: 1990000.0,
       stock: 29,
       ProveedorId: proveedores[0][1].id,
-      CategoriaId: categorias[0][0].id,
+      CategoriumId: categorias[0][0].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -37,7 +37,7 @@ module.exports = {
       precio: 2500000.0,
       stock: 19,
       ProveedorId: proveedores[0][0].id,
-      CategoriaId: categorias[0][1].id,
+      CategoriumId: categorias[0][1].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -45,7 +45,7 @@ module.exports = {
       precio: 1500000.0,
       stock: 18,
       ProveedorId: proveedores[0][0].id,
-      CategoriaId: categorias[0][1].id,
+      CategoriumId: categorias[0][1].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -53,7 +53,7 @@ module.exports = {
       precio: 900000.0,
       stock: 10,
       ProveedorId: proveedores[0][0].id,
-      CategoriaId: categorias[0][1].id,
+      CategoriumId: categorias[0][1].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -61,7 +61,7 @@ module.exports = {
       precio: 1200000.0,
       stock: 30,
       ProveedorId: proveedores[0][0].id,
-      CategoriaId: categorias[0][1].id,
+      CategoriumId: categorias[0][1].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -69,7 +69,7 @@ module.exports = {
       precio: 938900.0,
       stock: 12,
       ProveedorId: proveedores[0][2].id,
-      CategoriaId: categorias[0][2].id,
+      CategoriumId: categorias[0][2].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -77,7 +77,7 @@ module.exports = {
       precio: 1938900.0,
       stock: 11,
       ProveedorId: proveedores[0][2].id,
-      CategoriaId: categorias[0][2].id,
+      CategoriumId: categorias[0][2].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
@@ -85,13 +85,13 @@ module.exports = {
       precio: 30000000.0,
       stock: 14,
       ProveedorId: proveedores[0][2].id,
-      CategoriaId: categorias[0][2].id,
+      CategoriumId: categorias[0][2].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Producto', null, {});
+    return queryInterface.bulkDelete('Productos', null, {});
   }
 };
