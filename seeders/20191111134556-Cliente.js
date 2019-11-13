@@ -6,14 +6,14 @@ module.exports = {
       `SELECT id from Ciudad;`
     );
     return queryInterface.bulkInsert('Cliente', [{
-      identificacion: '12345',
+      id: '12345',
       nombre: 'Juan Sanchez',
       direccion: 'Calle 89#10-40',
       CiudadId: ciudades[0][0].id,
       createdAt: new Date(),
       updatedAt: new Date()
     }, {
-      identificacion: '6789',
+      id: '6789',
       nombre: 'Pedro García',
       direccion: 'Calle 69#20-15',
       CiudadId: ciudades[0][1].id,

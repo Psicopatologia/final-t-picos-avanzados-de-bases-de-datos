@@ -12,11 +12,11 @@ module.exports = {
         type: Sequelize.STRING
       },
       ClienteId: {
-        type: Sequelize.STRING,
+        type: Sequelize.INTEGER,
         allowNull: false,
         references: {
           model: 'Cliente',
-          key: 'identificacion'
+          key: 'id'
         }
       },
       createdAt: {
