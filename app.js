@@ -7,7 +7,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var productosRouter = require('./routes/productos');
 
+// Initializations
 var app = express();
+require('./mongoModels/database');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
