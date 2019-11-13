@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       ClienteId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
         references: {
           model: 'Cliente',

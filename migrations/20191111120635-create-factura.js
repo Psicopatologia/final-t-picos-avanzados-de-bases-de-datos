@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.DOUBLE
       },
       ClienteId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
         references: {
           model: 'Cliente',
