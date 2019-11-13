@@ -24,6 +24,6 @@ const usuarioSchema = new Schema({
             type: Number
         }]
     }]
-})
+}, { autoCreate: true })
 
 module.exports = mongoose.model('Usuario', usuarioSchema);

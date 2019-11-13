@@ -15,6 +15,6 @@ const productoSchema = new Schema({
         idUsuario: Number,
         puntuacion: Number
     }]
-})
+}, { autoCreate: true })
 
 module.exports = mongoose.model('Producto', productoSchema);
